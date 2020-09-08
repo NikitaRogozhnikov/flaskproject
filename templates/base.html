@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>NIRO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/open-iconic-bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap-datepicker.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/icomoon.css')}}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="about">NIRO</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="donate" class="nav-link">Donate Please</a></li>
+          <li class="nav-item"><a href="feedback" class="nav-link">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {% block body %} {% endblock %}
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-6 justify-content-center">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-4">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">NIRO</h2>
+            <p> Также вы можете найти меня здесь.</p>
+          </div>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
+            <li class="ftco-animate fadeInUp ftco-animated"><a href="github"><span class="icon-github"></span></a></li>
+            <li class="ftco-animate fadeInUp ftco-animated"><a href="facebook"><span class="icon-facebook"></span></a></li>
+            <li class="ftco-animate fadeInUp ftco-animated"><a href="instagram"><span class="icon-instagram"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="ftco-footer-widget mb-3">
+            <h2 class="ftco-heading-2">Contact Info</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">553.964313, 327.152516</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+7 985 581 ** **</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">nikitar****@gmail.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <div class="footer-copyright text-center py-3">2020
+            <a href="home">Niro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/popper.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+</body>
